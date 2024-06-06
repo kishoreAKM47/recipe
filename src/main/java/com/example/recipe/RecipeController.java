@@ -20,7 +20,7 @@ public class RecipeController {
 
     @GetMapping("/recipes")
     public ArrayList<Recipe> getRecipes() {
-        return recipeService.getRecipes();
+        return recipeService.getAllRecipes();
     }
 
     @GetMapping("/recipes/{recipeId}")
@@ -39,7 +39,7 @@ public class RecipeController {
     }
 
     @DeleteMapping("/recipes/{recipeId}")
-    public void deleteRecipe(@PathVariable int recipeId) {
+    public void deleteRecipe(@PathVariable(recipeId") int recipeId) {
         recipeService.deleteRecipe(recipeId);
     }
 }
