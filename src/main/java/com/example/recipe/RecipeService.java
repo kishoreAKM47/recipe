@@ -32,7 +32,7 @@ public class RecipeService implements RecipeRepository {
         // Write your code here
         int uniqueId=6;
         @Override
-        public ArrayList<Recipe>getRecipes(){
+        public ArrayList<Recipe>getAllRecipes(){
                 Collection<Recipe>recipeCollection=recipeBook.values();
                 ArrayList<Recipe>allrecipes=new ArrayList<>(recipeCollection);
                 return allrecipes;
