@@ -34,8 +34,8 @@ public class RecipeService implements RecipeRepository {
         @Override
         public ArrayList<Recipe>getRecipes(){
                 Collection<Recipe>recipeCollection=recipeBook.values();
-                ArrayList<Recipe>recipes=new ArrayList<>(recipeCollection);
-                return recipes;
+                ArrayList<Recipe>allrecipes=new ArrayList<>(recipeCollection);
+                return allrecipes;
         }
         @Override
         public Recipe getRecipeById(int recipeId){
@@ -62,10 +62,10 @@ public class RecipeService implements RecipeRepository {
                         existingRecipe.setRecipeName(recipe.getRecipeName());
                 }
                 if(recipe.getRecipeType()!=null){
-                        existingRecipe.setRecipeType(recipe.getRecipeType());
+                        existingRecipe.setRecipeDetails(recipe.getRecipeType());
                 }
-                if(recipe.getIngredints()!=null){
-                        existingRecipe.setIngredints(recipe.getIngredints());
+                if(recipe.getIngredients()!=null){
+                        existingRecipe.setIngredeints(recipe.getIngredients());
                 }
                 return existingRecipe;
         }
