@@ -36,15 +36,15 @@ public class Recipe {
         return recipeType;
     }
 
-    public void setRecipeType(String recipeType) {
+    public void setRecipeDetails(String recipeType) {
         this.recipeType = recipeType;
     }
 
-    public List<String> getIngredints() {
+    public List<String> getIngredients() {
         return ingredients;
     }
 
-    public void setIngredints(List<String> ingredients) {
+    public void setIngredients(List<String> ingredients) {
         this.ingredients = ingredients;
     }
 
