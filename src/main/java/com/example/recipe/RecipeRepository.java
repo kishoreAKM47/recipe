@@ -4,7 +4,7 @@ import java.util.*;
 import com.example.recipe.Recipe;
 
 public interface RecipeRepository{
-    ArrayList<Recipe>getRecipes();
+    ArrayList<Recipe>getAllRecipes();
     Recipe getRecipeById(int recipeId);
     Recipe addRecipe(Recipe recipe);
     Recipe updateRecipe(int recipeId, Recipe recipe);
